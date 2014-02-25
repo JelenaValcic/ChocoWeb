@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/*
+CSS upute za web mjesto Chocoweb,
+ova se datoteka koristi za sve stranice web mjesta a ukljucuje i upute preuzete s Interneta, sto je navedeno u komentarima.
+Izradile Jasna Kafka & Jelena Valčić, 2012.
+*/
+
+body {
+	position:absolute;
+	background-color: black;
+	margin:auto;
+}
+
+h1 {
+	color: #764e80;
+}
+
+p {
+	color: #432a25;
+	font-size:14px;
+}
+
+img {
+	opacity:0.7;
+}
+	
+img:hover {
+	opacity:1.0;
+}
+
+a {
+	color: #764e80;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+#pozadina_gore_lijevo {
+	position:absolute;
+	z-index:1;
+	opacity:0.75;
+}
+
+#pozadina_gore_desno {
+	position:absolute;
+	margin-left:34em;
+	z-index:1;
+	opacity:0.75;
+}
+
+#pozadina_dolje {
+	position:absolute;
+	opacity:0.75;
+	z-index:1;
+	margin-left:18.1em;
+	margin-top:40.5em;
+}
+
+#chocoweb_stranica {
+	background-color: #432a25;
+	margin-left:8em;
+	margin-right:8em;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:1000px;
+	color:#764e80;
+	height:800px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:bold; 
+	
+}
+
+#zaglavlje_gore {
+	background-color: #432a25;
+	height: 40px;
+}
+
+#zaglavlje {
+	background-color:#563b32;
+	height: 185px;
+	width:100%;	
+}
+
+#naslov {
+	position:absolute;
+	float:left;
+	height:115px;
+	margin-left:1.5em;
+	margin-top:45px;
+	z-index:2;
+}
+
+#kockice {
+	position:absolute;
+	margin-left:34.7em;
+	opacity:0.85;
+	z-index:2;	
+}
+
+#sadrzaj {
+	position:absolute;
+	background-color:#563b32;
+	margin-top:1em;
+	margin-bottom:3em;
+	margin-left:2em;
+	margin-right:2em;
+	border-style:double;
+	border-color:#432a25; 
+	border-radius:15px; 
+	border-width:10px;
+	height: 550px;
+}
+
+#lijeva_navigacija {
+	position:absolute;
+	margin-top: 3em;
+	margin-right: 2em;
+	margin-bottom: 4em;
+	margin-left: 2.5em;
+	float:left;
+	z-index:2;
+}
+
+.elem_meni {
+	text-align:center;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:16px;	
+	font-weight:bold;
+	border:double;
+	border-color:#432a25;
+	border-width:6px;
+}
+
+#okvir {
+	position:absolute;
+	opacity:1.0;
+	margin-top: 1.4em;
+	margin-right: 2.5em;
+	margin-bottom: 3em;
+	margin-left: 18.5em;
+	z-index:2;
+}
+
+#glavni_tekst {
+	position:relative;
+	background-color:#fee2b2;
+	margin-top: 3em;
+	margin-right: 2.5em;
+	margin-bottom: 3em;
+	margin-left: 20em; 
+	height:430px; 
+	width:480px;
+	padding-left:2em;
+	padding-right:2em;
+	padding-bottom:5px;
+	padding-top:2px;
+	text-align:justify;
+	z-index:3;
+}
+
+#podnozje {
+	position:absolute;
+	margin-top: 40em;
+	text-align:center;
+	height:60px;
+	width:1000px;
+}
+
+#podnozje p {
+	color: #764e80;
+}
+
+#mapa_mjesta ul{
+	list-style-type:none; 
+	font-size:13px;
+}
+
+/*
+galerija slika; sljedeci css kod preuzet od Stefan Petre, http://www.eyecon.ro/spacegallery/ dostupno 11.1.2012. 
+kod nije mijenjan osim url-a za potrebne slike i boje okvira - myGallery img
+*/
+
+.spacegallery {
+	position: relative;
+	overflow: hidden;
+}
+
+.spacegallery img {
+	position: absolute;
+	left:50%;
+}
+
+.spacegallery a {
+	position: absolute;
+	z-index: 1000;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(slike_za_galeriju/blank.gif);
+}
+
+#myGallery {
+	width: 100%;
+	height: 280px;
+}
+
+#myGallery img {
+	border: 3px solid #432a25;
+	width:300px;
+	height:180px;
+}
+
+a.loading {
+	background: #fff url(../slike_za_galeriju/ajax_small.gif) no-repeat center;
+}
+
+/*
+kraj preuzetog koda
+*/
+
+#kolacic_naslovna {
+	position:absolute;
+	margin-left:10em;
+	margin-top:1em;
+	z-index:0;
+	opacity:1.0;
+	height:160px;
+	width:170px;
+	border:none;
+}
+
+.dugi_tekst{
+	overflow:auto;	
+}
+
+.slika_proizvodjac {
+	float:right;
+	width:150px;
+	height:135px;
+	opacity:1.0;
+	margin-top:-1.5em;
+}
+
+#zvecevo {
+	padding-left: 10px;
+	height:150px;
+	margin-top:0;
+}
+
+#bomboni {
+	opacity:1.0;
+	width:260px;
+	height:200px;
+}
+
+.recepti {
+	opacity:1.0;
+	float:right;
+	width:210px;
+	height:180px;
+	border: 3px solid #432a25;
+	margin-left:17px;
+}
+
+#pece_kolace {
+	opacity:1.0;
+	margin-left: 10em;
+}
+
+#naslovna_galerija {
+	margin-left:-4px;
+	width:490px;
+	height:190px;
+	margin-top:2em;
+	border: none;
+}
+
+.video {
+	margin-left:1.5em;
+}
+
+.video_tekst{
+	text-align:center;
+}
